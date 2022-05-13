@@ -2,9 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import time
+from subprocess import CREATE_NO_WINDOW # This flag will only be available in windows
 
 chrome_options = Options()
 chrome_options.add_argument("headless")
+chrome_options.creationflags = CREATE_NO_WINDOW
 driver1 = Service("/usr/bin/chromedriver")
 driver = webdriver.Chrome(options=chrome_options)
 
