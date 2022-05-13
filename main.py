@@ -35,6 +35,12 @@ try:
         driver.get(url=url)
         time.sleep(2)
         if "Схемотехника электронных устройств. Тепляков А.П." in driver.title:
+            with open("result.txt", "a") as myfile:
+                myfile.write("\n")
+                myfile.write(driver.title)
+                myfile.write("\n")
+                myfile.write(url)
+                myfile.write("\n")
             print(driver.title)
             print(url)
             print()
@@ -49,6 +55,12 @@ try:
         driver.get(url=url)
         time.sleep(2)
         if "Схемотехника электронных устройств. Тепляков А.П." in driver.title:
+            with open("result.txt", "a") as myfile:
+                myfile.write("\n")
+                myfile.write(driver.title)
+                myfile.write("\n")
+                myfile.write(url)
+                myfile.write("\n")
             print(driver.title)
             print(url)
             print()
