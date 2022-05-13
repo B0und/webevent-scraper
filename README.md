@@ -1,4 +1,4 @@
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
-python main.py
+`python main.py`
